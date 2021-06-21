@@ -118,7 +118,94 @@ section.porque-nos > .center > p{
     margin-bottom:20px;
  }
 
+ section.cta{
+    background-image: url("images/banner-meio.svg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 200px;
+    text-align: center;
+    color: white;
+ }
+
+ section.cta h2,
+ section.cta h4{
+     font-weight: normal;
+     margin: 10px 0;
+ }
+ section.cta h2{
+     font-size: 30px;
+ }
+
+ section.cta a{
+    display: inline-block;
+    background-color: #FFDD33;
+    font-weight: bold;
+    padding: 8px 18px;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 10px;
+   
+ }
+
+ section.beneficios{
+    padding: 50px 0;
+ }
+
+ .lista-beneficios{
+     width: 50%;
+ }
+
+ .lista-beneficios h1{
+    color: black;
+    font-size: 40px;
+}
+
+ .lista-beneficios p{
+    vertical-align: middle;
+    font-size: 14px;
+    color: #7E92AC;
+}
+
+.lista-beneficios span{
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+
+
+.lista-beneficios img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.lista-beneficios a{
+    display: inline-block;
+    background-color: #255AFF;
+    font-weight: bold;
+    color: white;
+    padding: 8px 18px;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.img-beneficios{
+    width: 50%;
+}
+
+ .img-beneficios img{width: 100%;}
+
  @media screen and (max-width: 768px) {
+
+    .lista-beneficios, .img-beneficios{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    
+   
+
     .diferenciais{
         flex-wrap: wrap;
     }
@@ -139,4 +226,5 @@ section.porque-nos > .center > p{
         width: 100%;
 
     }
+
  }
