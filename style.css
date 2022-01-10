@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+
+
 
 .center{
     display: flex;
@@ -351,6 +353,191 @@ footer{
     cursor: pointer;
 }
 
+    /*CARDS*/
+
+img{
+    width: 100%;
+    display: block;
+}
+
+#traumas{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 60% auto;
+}
+
+.title{
+    background-color:  #7ad0eb;
+    padding: 1rem;
+}
+
+.title h1{
+    font-size: 4rem;
+    margin-top: 2rem;
+    font-weight:  700;
+    text-transform: capitalize;
+}
+
+.title p{
+    font-weight: 400;
+    opacity: 0.7;
+    max-width: 500px;
+    font-size: 2rem;
+    margin: 0.6rem auto 0 auto;  
+    line-height: 1.6rem;
+}
+
+.traumas-list{
+    background-color: rgb(0, 0, 0);
+}
+
+.traumas-list-container{
+    max-width: 1170px;
+    margin:  -180px auto 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+}
+
+.traumas-item{
+    margin: 1rem;
+    width:  320px;
+    height: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    transition:  all 0.3s ease-in-out;
+    position: relative;
+}
+
+.traumas-item:hover{
+    box-shadow:  0 0 18px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.traumas-item img{
+    max-width: 200px;
+    margin: auto;
+}
+
+
+.heart-icon{
+    position: absolute;
+    left: 1.4rem;
+    top: 1.4rem;
+    font-size: 1.4rem;
+    color: #bc1823;
+}
+
+
+.content{
+    height: 0;
+    overflow-y: scroll;
+    transition: height 0.3s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+
+.content p{
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin: 0.4rem;
+}
+
+.content::-webkit-scrollbar{
+    width: 0px;
+}
+
+.content-show{
+    height: 350px;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 1.4rem;
+    position: relative;
+    display: inline-block;
+}
+
+.collapsible-icon{
+    display: block;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.collapsible-icon:hover{
+    color: #bc1823;
+}
+
+
+
+.name .texto {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgb(85, 85, 85);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 20%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.name .texto::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.name:hover .texto {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width:700px) {
+    #traumas{
+        grid-template-rows: 30% auto;
+        overflow-x: hidden;
+    }
+
+    .traumas-item{
+        width: 100%;
+        margin: 50px 0px;
+    }
+
+    .lg-title h1{
+        font-size:  4rem;
+    }
+
+    .traumas-list-container{
+        margin: -130px auto 0 auto;
+
+    }
+}
  @media screen and (max-width: 768px) {
 
 
@@ -435,5 +622,7 @@ footer{
         width: 100%;
 
     }
+
+
 
  }
