@@ -85,23 +85,24 @@ section.marcas img{
     width: 20%;
 }
 
-section.porque-nos{
+section.trabalho{
     padding: 40px 0;
     background-color: #FBFCFE;
 
 }
 
-section.porque-nos > .center {
+section.trabalho > .center {
     max-width: 1280px;
 }
 
-section.porque-nos > .center > h2{
-    font-size: 64px;
+section.trabalho > .center > h2{
+    font-size: 32px;
+    font-family: 'Fredoka One', cursive;
     text-align: center;
     width: 100%;
 }
 
-section.porque-nos > .center > p{
+section.trabalho > .center > p{
     font-size: 14px;
     color: #ccc;
     text-align: center;
@@ -114,26 +115,77 @@ section.porque-nos > .center > p{
 }
 
 .box-diferenciais{
-    box-shadow: 0px 20px 40px #2426721C;
+    box-shadow: 0px 20px 40px #1c1e5f1c;
     width: 31%;
     margin-right: 2%;
     padding: 10px 20px;
     border-radius: 10px;
+    background-color: #dcdaf0;
 }
 
 .box-diferenciais h3{
-   font-size: 28px;
-   color: black;
+   font-size: 24px;
+   font-family: 'Fredoka One', cursive;
+   color: #0B1B3D;
    margin: 20px 0;
 }
 
 .box-diferenciais p{
-    font-size: 13px;
-    color: #7E92AC;
+    font-size: 15px;
+    color: #667c97;
     margin-bottom:20px;
- }
+}
 
- section.cta{
+section.profissional{
+    background-color: #75DFD1;
+    padding: 40px;
+}
+
+section.profissional > .center > .psicologo > h1{
+    font-size: 24px;
+    font-family: 'Fredoka One', cursive;
+    color: #0B1B3D;
+    margin-bottom: 40px;
+}
+
+section.profissional > .center > .psicologo > p{
+    font-size: 15px;
+    color: #414c58;
+    margin-bottom:20px;
+}
+
+section.profissional > .center{
+    flex-direction: row;
+}
+
+.psicologo{
+    margin-left: 60px;
+    width: 50%;
+}
+
+section.quiz{
+    background-color: #fff;
+    padding: 40px;
+}
+
+.box-leitura{
+    box-shadow: 0px 20px 40px #1c1e5f1c;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #aecdf9;
+    flex-direction: row;
+}
+
+.box-leitura > .pergunta-leitura > h1{
+    font-size: 24px;
+    font-family: 'Fredoka One', cursive;
+    color: #0B1B3D;
+    margin-bottom: 40px;
+}
+
+section.cta{
     background-image: url("images/banner-meio.svg");
     background-size: cover;
     background-position: center;
