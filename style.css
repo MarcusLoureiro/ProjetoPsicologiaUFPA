@@ -5,6 +5,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+.logoTitulo{
+    padding-left: 10%;
+}
+
 .content p{
     text-align: justify;
     font-size: 50;
@@ -13,7 +17,6 @@
 
 .center{
     display: flex;
-    max-width: 1100px;
     padding: 0 2%;
     margin: 0 auto;
     flex-wrap: wrap;
