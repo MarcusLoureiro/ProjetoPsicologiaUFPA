@@ -5,11 +5,18 @@
     font-family: 'Lato', sans-serif;
 }
 
+.logoTitulo{
+    padding-left: 10%;
+}
 
+.content p{
+    text-align: justify;
+    font-size: 50;
+    color: black;
+}
 
 .center{
     display: flex;
-    max-width: 1100px;
     padding: 0 2%;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -456,25 +463,30 @@ img{
 
 .traumas-list{
     background-color: rgb(0, 0, 0);
+    width: 100%;
 }
 
 .traumas-list-container{
-    max-width: 1170px;
+    width: auto;
     margin:  -180px auto 0 auto;
     padding: 0 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
+    
+}
+
+.content.content-show.true{
+    overflow: scroll;
 }
 
 .traumas-item{
-    margin: 1rem;
-    width:  320px;
+    margin: 25px;
+    width:  500px;
     height: auto;
-    padding: 10px;
-    background-color: #fff;
+    background-color: #ecfaf9;
     border-radius: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -485,16 +497,18 @@ img{
     position: relative;
 }
 
+
 .traumas-item:hover{
     box-shadow:  0 0 18px 0 rgba(0, 0, 0, 0.3);
 }
 
 
-.traumas-item img{
-    max-width: 200px;
-    margin: auto;
-}
 
+.imagemItem img{
+    width: 500px;
+    height: 300px;
+    border-radius:10px 10px 0 0;
+}
 
 .heart-icon{
     position: absolute;
@@ -507,9 +521,20 @@ img{
 
 .content{
     height: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     transition: height 0.3s ease-in-out;
     margin-bottom: 1rem;
+  
+}
+
+.content .causas_p{
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin: 0.4rem;
+    font-size: 20px;
+    padding: 0px 25px;
+
 }
 
 
@@ -518,19 +543,66 @@ img{
     line-height: 1.6;
     opacity: 0.9;
     margin: 0.4rem;
+    font-size: 20px;
+    padding: 25px;
 }
 
-.content::-webkit-scrollbar{
-    width: 0px;
+
+.content::-webkit-scrollbar {
+    width: 12px;
+    height: 0px;
+}
+ 
+.content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3); 
+    border-radius: 5px;
+    
+}
+ 
+.content::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(70, 69, 69);
+
 }
 
-.content-show{
+
+
+/*
+.content::-webkit-scrollbar-button{
+    width: 15px;
+}
+
+.content::-webkit-scrollbar-thumb{
+    width: 15px;
+}
+*/
+
+/*
+.content::-webkit-scrollbar-track-piece{
+    width: 15px;
+}
+
+.content::-webkit-scrollbar-corner{
+    width: 15px;
+}
+
+.content::-webkit-resizer{
+    width: 15px;
+}
+
+*/
+.content-show.true{
     height: 350px;
+ 
 }
+
+
 
 .name{
-    font-weight: 700;
-    font-size: 1.4rem;
+    color:#0B1B3D;
+    font-size: 250%;
+    padding-top: 25px;
+    font-family: 'Fredoka One', cursive;
     position: relative;
     display: inline-block;
 }
@@ -555,7 +627,6 @@ img{
   background-color: rgb(85, 85, 85);
   color: #fff;
   text-align: center;
-  font-size: 15px;
   padding: 10px 0;
   border-radius: 6px;
   position: absolute;
