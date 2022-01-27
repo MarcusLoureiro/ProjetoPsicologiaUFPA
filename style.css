@@ -163,6 +163,28 @@ section.profissional > .center{
     width: 50%;
 }
 
+section.quiz{
+    background-color: #fff;
+    padding: 40px;
+}
+
+.box-leitura{
+    box-shadow: 0px 20px 40px #1c1e5f1c;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #aecdf9;
+    flex-direction: row;
+}
+
+.box-leitura > .pergunta-leitura > h1{
+    font-size: 24px;
+    font-family: 'Fredoka One', cursive;
+    color: #0B1B3D;
+    margin-bottom: 40px;
+}
+
 section.cta{
     background-image: url("images/banner-meio.svg");
     background-size: cover;
