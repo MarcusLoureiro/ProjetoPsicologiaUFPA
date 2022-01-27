@@ -56,7 +56,7 @@ restart_quiz.onclick = ()=>{
     clearInterval(counterLine); //clear counterLine
     startTimer(timeValue); //calling startTimer function
     startTimerLine(widthValue); //calling startTimerLine function
-    timeText.textContent = "Time Left"; //change the text of timeText to Time Left
+    timeText.textContent = "Tempo:"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
 }
 
@@ -79,7 +79,7 @@ next_btn.onclick = ()=>{
         clearInterval(counterLine); //clear counterLine
         startTimer(timeValue); //calling startTimer function
         startTimerLine(widthValue); //calling startTimerLine function
-        timeText.textContent = "Time Left"; //change the timeText to Time Left
+        timeText.textContent = "Tempo"; //change the timeText to Time Left
         next_btn.classList.remove("show"); //hide the next button
     }else{
         clearInterval(counter); //clear counter
@@ -97,7 +97,6 @@ function showQuetions(index){
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
-    + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
     
@@ -152,15 +151,15 @@ function showResult(){
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span>and congrats! 🎉, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>e meus parabéns 🎉, você acertou '+ userScore +' de um total de '+ questions.length +'</span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if(userScore > 1){ // if user scored more than 1
-        let scoreTag = '<span>and nice 😎, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>e olha que legal 😎, você acertou '+ userScore +' de um total de '+ questions.length +'</span>';
         scoreText.innerHTML = scoreTag;
     }
     else{ // if user scored less than 1
-        let scoreTag = '<span>and sorry 😐, You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>mas infelizmente 😐, você acertou apenas '+ userScore +' de um total de '+ questions.length +'</span>';
         scoreText.innerHTML = scoreTag;
     }
 }
@@ -176,14 +175,14 @@ function startTimer(time){
         }
         if(time < 0){ //if timer is less than 0
             clearInterval(counter); //clear counter
-            timeText.textContent = "Time Off"; //change the time text to time off
+            timeText.textContent = "Tempo esgotado"; //change the time text to time off
             const allOptions = option_list.children.length; //getting all option items
             let correcAns = questions[que_count].answer; //getting correct answer from array
             for(i=0; i < allOptions; i++){
                 if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer
                     option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
                     option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
-                    console.log("Time Off: Auto selected correct answer.");
+                    console.log("tempo : Auto selected correct answer.");
                 }
             }
             for(i=0; i < allOptions; i++){
@@ -207,6 +206,6 @@ function startTimerLine(time){
 
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
+    let totalQueCounTag = '<span>Questão: <p>' + index +'</p> de <p>'+ questions.length +'</p></span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }

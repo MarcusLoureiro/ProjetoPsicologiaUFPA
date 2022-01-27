@@ -2,57 +2,59 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "O que significa a sigla TEPT?",
+    answer: "Transtorno de Estresse pós traumático",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
-    ]
+      "Transtorno de Esquizofrenia patológica",
+      "Transtorno de Estresse pós traumático",
+      "Tromboembolismo Pulmonar"]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "São sintomas do TEPT:",
+    answer: "flashback, fuga de situações que remetem ao trauma, humor deprimido",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
-    ]
+      "flashback, fuga de situações que remetem ao trauma, humor deprimido",
+      "flashback, erupções cutâneas e fadiga",
+      "Dificuldade de aprendizagem, agressão e impulsividade"]
   },
     {
     numb: 3,
     question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    answer: "ISRS",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "Estabilizadores de humor",
+      "ISRS",
+      "Antiadrenérgico"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "A pessoa que foi diagnosticada com TEPT deve:",
+    answer: "Manter contato com parentes e amigos próximos que o ajudem e o compreenda e procurar ajuda profissional",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Se isolar e não procurar ajuda",
+      "Manter contato com parentes e amigos próximos que o ajudem e o compreenda e procurar ajuda profissional",
+      "Seguir a vida ignorando completamente o transtorno mental"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: " Quais experiências estão relacionadas ao TEPT?",
+    answer: "Sequestro e Desastres naturais",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Sequestro e Desastres naturais",
+      "Se divertir com os amigos",
+      "Não existem situações que sejam relacionadas ao TEPT",]
+  },
+    {
+    numb: 6,
+    question: "Quanto tempo dura o TEPT?",
+    answer: "Varia de pessoa para pessoa, podendo ser vitalício ou não",
+    options: [
+      "Varia de pessoa para pessoa, podendo ser vitalício ou não",
+      "Todas as pessoas apresentam os mesmos sintomas",
+      "O TEPT não é uma doença e portanto não tem como ser avaliado"
     ]
   },
   // you can uncomment the below codes and make duplicate as more as you want to add question
