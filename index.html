@@ -2,7 +2,7 @@
 
     <head>
 
-        <title>Meu Projeto Final!</title>
+        <title>PsicoInfo | TEPT</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -14,13 +14,17 @@
        
         <link href="style.css" rel="stylesheet" />
 
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        </style>
+
     </head>
     <body>
         <section class="main">
             <div class="center">
                 <div class="menu">
                     <div class="logo-menu">
-                        <a href="/"><img src="images/logo.svg"/></a>
+                        <div class="logoTitulo">PsicoInfo</div>
                     </div><!--logo-menu-->
                     <div class="items-menu">
                         <a href="">Início</a>
@@ -38,24 +42,146 @@
                         </div>
                     </div>
                 </div><!--menu-->
-                <div class="mockup">
-                    <h1>Promova experiências aos seus clientes</h1>
-                    <br/>
-                    <p>E veja resultados expressivos dia após dia</p>
-                    <br/>
-                    <img src="images/mockup.svg"/>
-                </div><!--mockup-->
+                
             </div><!--center-->
+
+            <section slider>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+    
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="images/banner11.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/banner21.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/banner31.png" style="width:100%">
+                    </div>
+                    
+                    <!--
+                    <div class="mySlides fade">
+                    <img src="images/slide2.jpg" style="width:100%">
+                    <div class="text">Slide 2</div>
+                    </div>
+                    -->
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </section>
+            <script src="/slideshow.js"></script>
+
+
         </section><!--main-->
-            <section class="marcas">
-                <div class="center">
-                    <img src="images/LOGO1.png"/>
-                    <img src="images/LOGO2.png"/>
-                    <img src="images/LOGO3.png"/>
-                    <img src="images/LOGO4.png"/>
-                    <img src="images/LOGO5.png"/>
-                </div><!--center-->
-            </section><!--marcas-->
+            
+
+            
+            
+
+            <section id="traumas">
+                <div class="title">
+                    <h1> Estresse pós-traumático</h1>
+                    <p>Veja abaixo alguns exemplos</p>
+                </div><!--title-->
+                <div id="traumas-list">
+                    <div class="traumas-list-container">
+                        <div class = "traumas-item">
+                            <!-- <span class = "heart-icon">
+                                <i class="fa fa-heart"></i>
+                            </span><!--heart-icon-->
+                            <img src="/images/teptIcon (2).png">
+                            <div class="traumas-content">
+                                <div class="name">TEPT
+                                    <span class="texto">Clique na seta para mais informações</span>
+                                </div>
+                                <span class="collapsible-icon">
+                                    <i class="fa fa-chevron-down"></i>
+                                </span><!--collapsible-icon-->
+                                <div class="content">
+                                    <p>TEPT é a sigla médica que designa o transtorno do estresse 
+                                        pós-traumático. Essa é uma condição caracterizada como um 
+                                        distúrbio de ansiedade, englobando uma série de sintomas e 
+                                        sinais que podem ser diferentes de acordo com o paciente.</p>
+                                    <p>Entre os sintomas estão pesadelos ou lembranças repentinas (flashbacks)</p>
+                                    <p>fuga de situações que relembrem o trauma</p>
+                                    <p>reações exageradas a estímulos</p>
+                                    <p>ansiedade e humor deprimido.</p>
+                                </div><!--content-->
+                            </div><!--traumas-content-->
+                        </div><!--traumas-item-->
+
+
+                        <div class = "traumas-item">
+                            <!-- <span class = "heart-icon">
+                                <i class="fa fa-heart"></i>
+                            </span><!--heart-icon-->
+                            <img src="/images/teptIcon (2).png">
+                            <div class="traumas-content">
+                                <div class="name">TEPT
+                                    <span class="texto">Clique na seta para mais informações</span>
+                                </div>
+                                <span class="collapsible-icon">
+                                    <i class="fa fa-chevron-down"></i>
+                                </span><!--collapsible-icon-->
+                                <div class="content">
+                                    <p>TEPT é a sigla médica que designa o transtorno do estresse 
+                                        pós-traumático. Essa é uma condição caracterizada como um 
+                                        distúrbio de ansiedade, englobando uma série de sintomas e 
+                                        sinais que podem ser diferentes de acordo com o paciente.</p>
+                                    <p>Entre os sintomas estão pesadelos ou lembranças repentinas (flashbacks)</p>
+                                    <p>fuga de situações que relembrem o trauma</p>
+                                    <p>reações exageradas a estímulos</p>
+                                    <p>ansiedade e humor deprimido.</p>
+                                </div><!--content-->
+                            </div><!--traumas-content-->
+                        </div><!--traumas-item-->
+
+
+                        <div class = "traumas-item">
+                        <!-- <span class = "heart-icon">
+                                <i class="fa fa-heart"></i>
+                            </span><!--heart-icon-->
+                            <img src="/images/teptIcon (2).png">
+                            <div class="traumas-content">
+                                <div class="name">TEPT
+                                    <span class="texto">Clique na seta para mais informações</span>
+                                </div>
+                                <span class="collapsible-icon">
+                                    <i class="fa fa-chevron-down"></i>
+                                </span><!--collapsible-icon-->
+                                <div class="content">
+                                    <p>TEPT é a sigla médica que designa o transtorno do estresse 
+                                        pós-traumático. Essa é uma condição caracterizada como um 
+                                        distúrbio de ansiedade, englobando uma série de sintomas e 
+                                        sinais que podem ser diferentes de acordo com o paciente.</p>
+                                    <p>Entre os sintomas estão pesadelos ou lembranças repentinas (flashbacks)</p>
+                                    <p>fuga de situações que relembrem o trauma</p>
+                                    <p>reações exageradas a estímulos</p>
+                                    <p>ansiedade e humor deprimido.</p>
+                                </div><!--content-->
+                            </div><!--traumas-content-->
+                        </div><!--traumas-item-->
+
+
+
+                    </div><!--traumas-list-container-->
+                </div><!--traumas-list-->
+            </section><!--traumas-->
+            <script src="/script.js"></script>
+
+
             <section class="porque-nos">
                 <div class="center">
                     <h2>Por Que Nós?</h2>
@@ -102,63 +228,6 @@
                 </div><!--center-->
             </section><!--beneficios-->
 
-
-            <section class="depoimentos">
-                <h1>Depoimentos</h1>
-                <div style="display:block;" class="center">
-                    <br/>
-                    <div style="max-width: 1200px;" class="container-slider">
-    
-
-                        <div class="container-slider-single">
-                            <img src="images/DEPOIMENTO2.png" />
-                            <h3>Lucas Mendes</h3>
-                            <p>Buscamos a Agência Bold para nos ajudar com campanhas de growth marketing focadas em um público extremamente específico. O produto teve faturamento maior que 300%.</p>
-                            <img src="images/RATE.svg" />
-                        </div>
-
-
-                        <div class="container-slider-single">
-                            <img src="images/DEPOIMENTO1.png" />
-                            <h3>Miriam Souza</h3>
-                            <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
-                            <img src="images/RATE.svg" />
-                        </div>
-                       
-                        
-
-                        <div class="container-slider-single">
-                            <img src="images/DEPOIMENTO3.png" />
-                            <h3>Zaya Menphis</h3>
-                            <p>A estratégia de lançamento da marca não seria a mesma sem o trabalho comprometido da Agência Bold. Obrigado ao Vinícius, que abraçou nossos desafios como um de nós.</p>
-                            <img src="images/RATE.svg" />
-                        </div>
-
-                        <div class="container-slider-single">
-                            <img src="images/DEPOIMENTO2.png" />
-                            <h3>Lucas Mendes</h3>
-                            <p>Buscamos a Agência Bold para nos ajudar com campanhas de growth marketing focadas em um público extremamente específico. O produto teve faturamento maior que 300%.</p>
-                            <img src="images/RATE.svg" />
-                        </div>
-
-                       <div class="container-slider-single">
-                            <img src="images/DEPOIMENTO1.png" />
-                            <h3>Miriam Souza</h3>
-                            <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
-                            <img src="images/RATE.svg" />
-                        </div>
-                       
-                       
-
-                        <div class="container-slider-single">
-                            <img src="images/DEPOIMENTO3.png" />
-                            <h3>Zaya Menphis</h3>
-                            <p>A estratégia de lançamento da marca não seria a mesma sem o trabalho comprometido da Agência Bold. Obrigado ao Vinícius, que abraçou nossos desafios como um de nós.</p>
-                            <img src="images/RATE.svg" />
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <section class="contato">
                 <h1>Entre em contato</h1>
