@@ -16,6 +16,9 @@ body{
     background: #aecdf9;
 }
 
+
+
+
 .start_btn,
 .info_box,
 .quiz_box,
@@ -24,8 +27,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
 .info_box.activeInfo,
@@ -42,12 +44,31 @@ body{
     font-weight: 500;
     color: #3ed5f0;
     padding: 15px 30px;
+    margin-left: 10px;
+    align-items: center;
     outline: none;
     border: none;
     border-radius: 5px;
     background: #fff;
     cursor: pointer;
 }
+
+.start_btn .btnVoltar{
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #3ed5f0;
+    padding: 15px 5px;
+    display: flex;
+    margin: 10px;
+    margin-top: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
 
 .info_box{
     width: 540px;
@@ -86,6 +107,7 @@ body{
 }
 .info_box .buttons{
     height: 60px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -96,7 +118,7 @@ body{
 .info_box .buttons button{
     margin: 0 5px;
     height: 40px;
-    width: 100px;
+    width: 120px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
