@@ -201,7 +201,7 @@ section.quiz{
 
 section.relatos{
     background-color: #7ad0eb;
-    padding: 40px;
+    padding: 20px;
 }
 
 .relatos-container{
@@ -217,7 +217,8 @@ section.relatos{
     font-size: 24px;
     font-family: 'Fredoka One', cursive;
     color: #0B1B3D;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     align-self: center;
 }
 
@@ -227,12 +228,12 @@ section.relatos{
     align-items: center;
     align-self: center;
     align-content: center;
-    justify-content: center;
+    justify-content:stretch;
 }
 
 .relatos-content{
     margin: 15px;
-    width:  700px;
+    width:fit-content;
     height: auto;
     background-color: #ecfaf9;
     border-radius: 1.2rem;
@@ -241,7 +242,7 @@ section.relatos{
     align-items: center;
     align-self: center;
     padding: 20px;
-    justify-content: center;
+    justify-content: stretch;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     transition:  all 0.3s ease-in-out;
     position: relative;
@@ -264,17 +265,28 @@ section.relatos{
     display: flex;
     align-items: center;
     align-self: center;
-    justify-content: center;
+    justify-content:space-between;
     position: relative;
 }
 
-.relatos-item p{
-    font-size: 15px;
+.relatos-text-coluna{
+    height: auto;
+    max-width: 400px;
+    flex-direction: column;
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    padding: 5px;
+}
+
+.relatos-text-coluna p{
+    font-size: 13px;
     line-height: 1.6;
     opacity: 0.9;
     margin: 0.4rem;
-    font-size: 15px;
+    margin-bottom: 0rem;
     padding: 10px;
+    padding-bottom: 0px;
     color: #425992;
 }
 
