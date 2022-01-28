@@ -95,11 +95,12 @@ section.marcas img{
 section.trabalho{
     padding: 40px 0;
     background-color: #FBFCFE;
-
+    justify-content: center;
 }
 
 section.trabalho > .center {
     max-width: 1280px;
+    justify-content: center;
 }
 
 section.trabalho > .center > h2{
@@ -117,8 +118,11 @@ section.trabalho > .center > p{
 }
 
 .diferenciais{
+    width: 100%;
     display: flex;
     margin-top: 50px;
+    justify-content: center;
+    align-self: center;
 }
 
 .box-diferenciais{
@@ -141,6 +145,10 @@ section.trabalho > .center > p{
     font-size: 15px;
     color: #667c97;
     margin-bottom:20px;
+    line-height: 1.3rem;
+    text-align: justify;
+
+
 }
 
 section.profissional{
@@ -165,6 +173,8 @@ section.profissional > .center > .psicologo > p{
     color: #475c8f;
     margin-bottom:20px;
     line-height: 1.6;
+    text-align: justify;
+
 }
 
 section.profissional > .center{
@@ -269,6 +279,8 @@ section.relatos{
     padding: 10px;
     padding-bottom: 0px;
     color: #425992;
+    text-align: justify;
+
 }
 
 section.cta{
@@ -481,13 +493,15 @@ section.contato form{
 
 footer{
     padding: 10px 0;
-    background-color: #255AFF;
+    background-color: #7ad0eb;
     color: white;
 }
 
 .text-footer{
     width: 50%;
     padding: 8px 0;
+    font-size: 15px;
+    color: #0B1B3D;
 }
 
 .items-menu-mobile{
@@ -730,7 +744,7 @@ section.quiz img{
 
 .box-leitura{
     box-shadow: 0px 20px 40px #1c1e5f1c;
-    width: 70%;
+    width: 80%;
     margin-right: 2%;
     padding: 10px 20px;
     border-radius: 10px;
@@ -766,11 +780,11 @@ section.quiz img{
 .pergunta-leitura a.btnSim{
     margin: 0px 25px 50px 25px;
     display: inline-block;
-    background-color: #53e996;
+    background-color: #0fc25f;
     font-weight: bold;
     color: white;
     padding: 8px 50px;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: #7ad0eb;
     border-radius: 50px;
     text-align: center;
@@ -785,7 +799,7 @@ section.quiz img{
     color: white;
     font-weight: bold;
     padding: 8px 50px;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: #7ad0eb;
     border-radius: 50px;
     text-align: center;

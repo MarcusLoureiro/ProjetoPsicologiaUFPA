@@ -3,24 +3,24 @@ let questions = [
     {
     numb: 1,
     question: "O que significa a sigla TEPT?",
-    answer: "Transtorno de Estresse pós traumático",
+    answer: "Transtorno de Estresse Pós-traumático",
     options: [
       "Transtorno de Esquizofrenia patológica",
-      "Transtorno de Estresse pós traumático",
+      "Transtorno de Estresse Pós-traumático",
       "Tromboembolismo Pulmonar"]
   },
     {
     numb: 2,
     question: "São sintomas do TEPT:",
-    answer: "flashback, fuga de situações que remetem ao trauma, humor deprimido",
+    answer: "Flashback, fuga de situações que remetem ao trauma, humor deprimido",
     options: [
-      "flashback, fuga de situações que remetem ao trauma, humor deprimido",
-      "flashback, erupções cutâneas e fadiga",
+      "Flashback, fuga de situações que remetem ao trauma, humor deprimido",
+      "Flashback, erupções cutâneas e fadiga",
       "Dificuldade de aprendizagem, agressão e impulsividade"]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
+    question: "Quais medicamentos são eficazes para o tratamento do TEPT?",
     answer: "ISRS",
     options: [
       "Estabilizadores de humor",
