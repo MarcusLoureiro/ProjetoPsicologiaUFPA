@@ -238,7 +238,7 @@
 
             <section class="profissional">
                 <div class="center">
-                    <img src="images/psicologo.png" style="width: 33%; height:fit-content;"/> 
+                    <img src="images/psicologo.png"/> 
                     <div class="psicologo">
                         <h1>O papel do psicólogo no tratamento do TEPT</h1>
                         <p>
@@ -262,10 +262,17 @@
             </section><!--profissional-->
 
             <section class="quiz">
+                <script>
+                    function alertaUser(){
+                        alert("Leia todo o conteúdo do site e assim você estará pronto para fazer nosso quiz sobre o assunto!");
+                    }
+                </script>
                 <div class="box-leitura">
-                    <img src="/images/leitura.png" style="width: 70%;">
+                    <img src="/images/leitura.png">
                     <div class="pergunta-leitura">
                         <h1>Agora está bem informado sobre TEPT?</h1>
+                        <a class = "btnSim" href = "/quiz.html">Sim</a>
+                        <a onclick = "alertaUser()"class = "btnNao" href = "#top">Não</a>
                     </div><!--pergunta-leitura-->
                 </div><!--box-leitura-->
             </section><!--quiz-->

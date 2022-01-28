@@ -1,6 +1,7 @@
 const caollapsibleBtns = document.querySelectorAll('.collapsible-icon');
 const caollapsibleContents = document.querySelectorAll('.content');
 
+
 caollapsibleBtns.forEach((btn, btnIdx)=>{
     btn.addEventListener('click', () =>{
         let icon = btn.firstElementChild;
@@ -50,3 +51,4 @@ caollapsibleBtns.forEach((btn, btnIdx)=>{
         }
     })
 })
+
