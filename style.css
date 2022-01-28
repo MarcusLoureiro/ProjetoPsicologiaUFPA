@@ -119,10 +119,10 @@ section.trabalho > .center > p{
 
 .diferenciais{
     width: 100%;
-    display: flex;
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-self: center;
 }
 
 .box-diferenciais{
