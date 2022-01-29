@@ -23,7 +23,7 @@ caollapsibleBtns.forEach((btn, btnIdx)=>{
                         content.classList.add('true');
                     }else{
                         icon.className = 'fa fa-chevron-down';
-                        confirm('Você deve seguir a ordem de leitura da direita para esquerda!');
+                        confirm('Você deve seguir a ordem de leitura da esquerda para direita!');
                     }
                 }   
             })
