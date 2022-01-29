@@ -54,11 +54,13 @@ body{
 }
 
 .start_btn .btnVoltar{
+    width: 250px;
+    justify-content: center;
     align-items: center;
     font-size: 25px;
     font-weight: 500;
-    color: #3ed5f0;
-    padding: 15px 5px;
+    color: #0B1B3D;
+    padding: 20px;
     display: flex;
     margin: 10px;
     margin-top: 50px;
